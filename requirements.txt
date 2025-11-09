@@ -1,8 +1,9 @@
-streamlit
-torch
+streamlit==1.32.0
+torch==2.1.0
+torchvision==0.16.0
+transformers==4.36.2
 diffusers==0.25.0
-transformers
-opencv-python
-numpy
+accelerate==0.25.0
+opencv-python-headless
 pillow
-accelerate
+numpy
