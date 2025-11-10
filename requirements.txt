@@ -1,9 +1,8 @@
-streamlit>=1.32.0
-diffusers>=0.27.0
-transformers>=4.39.0
-torch>=2.2.0
-accelerate>=0.28.0
-Pillow>=10.0.0
-safetensors>=0.4.2
-numpy>=1.26.0
-typing-extensions>=4.9.0
+streamlit
+torch
+diffusers
+transformers
+accelerate
+Pillow
+safetensors
+rich==14.2.0
