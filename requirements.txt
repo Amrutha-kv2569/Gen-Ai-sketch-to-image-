@@ -1,11 +1,9 @@
-streamlit==1.32.0
-torch==2.0.1+cpu
-torchvision==0.15.2+cpu
-torchaudio==2.0.2+cpu
--f https://download.pytorch.org/whl/cpu
-transformers==4.36.2
-diffusers==0.19.3
-accelerate==0.22.0
-opencv-python-headless==4.8.1.78
-numpy
-pillow
+streamlit>=1.32.0
+diffusers>=0.27.0
+transformers>=4.39.0
+torch>=2.2.0
+accelerate>=0.28.0
+Pillow>=10.0.0
+safetensors>=0.4.2
+numpy>=1.26.0
+typing-extensions>=4.9.0
