@@ -5,11 +5,18 @@ import io
 
 st.title("Sketch → Real Image Generator 🖼️ (GPT-powered)")
 
+# ✅ Handle missing API key gracefully
+if "OPENAI_API_KEY" not in st.secrets:
+    st.error("❌ Missing OpenAI API Key. Add it in Streamlit Secrets.")
+    st.stop()
+
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 sketch_file = st.file_uploader("Upload a Sketch", type=["jpg", "png"])
-prompt = st.text_input("Describe how the sketch should be transformed",
-                       "color this into a realistic airplane")
+prompt = st.text_input(
+    "Describe how the sketch should be transformed",
+    "color this into a realistic airplane"
+)
 
 if sketch_file:
     sketch_img = Image.open(sketch_file).convert("RGB")
